@@ -87,7 +87,6 @@ sudo systemctl restart bluetooth
 | `tmux ls` | List all tmux sessions |
 | `tmux kill-session -t myname` | Kill the tmux session named myname |
 | `Ctrl+b "` | Split
-
  the current pane into two, top and bottom |
 | `Ctrl+b %` | Split the current pane into two, left and right |
 | `Ctrl+b arrow key` | Navigate through panes |
@@ -98,5 +97,4 @@ sudo systemctl restart bluetooth
 | `Ctrl+b l` | Move to the last window |
 
 
----
 
