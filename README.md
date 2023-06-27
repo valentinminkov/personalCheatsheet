@@ -7,6 +7,8 @@
 - [Linux](#linux)
   - [KDE](#kde)
     - [Restarting Plasma in KDE](#restarting-plasma-in-kde)
+  - [Services](#services)
+    - [Restarting Bluetooth Service](#restarting-bluetooth-service)
 
 ---
 
@@ -20,16 +22,25 @@
 
 ### **Restarting Plasma in KDE**
 
-1. Open a terminal window using `Ctrl + Alt + T`.
    
-2. Enter the following command to kill the Plasma shell:
+1. Enter the following command to kill the Plasma shell:
 ``` 
 killall plasmashell
 ```
-This command terminates the Plasma shell process.
 
-Once the Plasma shell process is terminated, you can restart it by running the following command:
+2. Restart it by running the following command:
 
 ```
 kstart5 plasmashell
+```
+
+## **Services**
+
+*This section deals with services on Linux.*
+
+### **Restarting Bluetooth Service**
+
+
+``` 
+sudo systemctl restart bluetooth
 ```
