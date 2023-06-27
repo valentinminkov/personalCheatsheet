@@ -9,8 +9,10 @@
     - [Restarting Plasma in KDE](#restarting-plasma-in-kde)
   - [Services](#services)
     - [Restarting Bluetooth Service](#restarting-bluetooth-service)
-  - [Vim](#vim)
-    - [Basic Vim Cheatsheet](#basic-vim-cheatsheet)
+- [Vim](#vim)
+  - [Basic Vim Cheatsheet](#basic-vim-cheatsheet)
+- [Tmux](#tmux)
+  - [Basic Tmux Cheatsheet](#basic-tmux-cheatsheet)
 
 ---
 
@@ -24,7 +26,6 @@
 
 ### **Restarting Plasma in KDE**
 
-   
 1. Enter the following command to kill the Plasma shell:
 ``` 
 killall plasmashell
@@ -42,16 +43,14 @@ kstart5 plasmashell
 
 ### **Restarting Bluetooth Service**
 
-
 ``` 
 sudo systemctl restart bluetooth
 ```
 
-## **Vim**
+# **Vim**
 
-*This section provides basic Vim commands for everyday use.*
 
-### **Basic Vim cheatsheet**
+## **Basic Vim cheatsheet**
 
 | Command | Description |
 | ------- | ----------- |
@@ -74,4 +73,30 @@ sudo systemctl restart bluetooth
 | `:%s/foo/bar/g` | Replace 'foo' with 'bar' in the entire file |
 | `"*p` | Paste from clipboard, replacing the current selection |
 | `"*y` | Copy highlighted text to the clipboard |
+
+# **Tmux**
+
+## **Basic Tmux Cheatsheet**
+
+| Command | Description |
+| ------- | ----------- |
+| `tmux` | Start a new tmux session |
+| `tmux new -s myname` | Start a new tmux session named myname |
+| `tmux a` or `tmux at` | Attach to the last used tmux session |
+| `tmux a -t myname` | Attach to the tmux session named myname |
+| `tmux ls` | List all tmux sessions |
+| `tmux kill-session -t myname` | Kill the tmux session named myname |
+| `Ctrl+b "` | Split
+
+ the current pane into two, top and bottom |
+| `Ctrl+b %` | Split the current pane into two, left and right |
+| `Ctrl+b arrow key` | Navigate through panes |
+| `Ctrl+b d` | Detach from the current tmux session |
+| `Ctrl+b c` | Create a new window |
+| `Ctrl+b n` | Move to the next window |
+| `Ctrl+b p` | Move to the previous window |
+| `Ctrl+b l` | Move to the last window |
+
+
+---
 
